@@ -1,0 +1,27 @@
+/**
+ * @copyright   2010-2015, The Titon Project
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ * @link        http://titon.io
+ */
+.button {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  font-weight: normal;
+  line-height: normal;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.75rem; }
+  .button.small, .small .button {
+    font-size: 0.7rem;
+    padding: 0.5rem; }
+  .button.large, .large .button {
+    font-size: 1.3rem;
+    padding: 1rem; }
+  .button.is-disabled, .button[disabled] {
+    cursor: not-allowed; }

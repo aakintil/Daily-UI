@@ -1,0 +1,64 @@
+/**
+ * @copyright   2010-2015, The Titon Project
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ * @link        http://titon.io
+ */
+.carousel {
+  position: relative;
+  max-width: 100%; }
+  .carousel.no-next .carousel-next,
+  .carousel.no-prev .carousel-prev {
+    display: none; }
+
+.carousel-items {
+  /* 4:3 ratio */
+  padding-bottom: 75%;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .carousel-items > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 1s, top 1s, right 1s;
+    width: 100%;
+    height: 100%; }
+    .carousel-items > ul > li {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .carousel-items > ul > li > img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+
+.carousel.slide .carousel-items > ul > li {
+  float: left; }
+
+.carousel.slide .carousel-items > ul::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.carousel.fade .carousel-items > ul {
+  position: relative; }
+  .carousel.fade .carousel-items > ul > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s, visibility 1s; }
+    .carousel.fade .carousel-items > ul > li.show {
+      z-index: 5; }
+
+.carousel--wide .carousel-items {
+  padding-bottom: 56.25%; }
+
+.carousel--square .carousel-items {
+  padding-bottom: 100%; }

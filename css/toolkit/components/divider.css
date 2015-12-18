@@ -1,0 +1,28 @@
+/**
+ * @copyright   2010-2015, The Titon Project
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ * @link        http://titon.io
+ */
+.divider {
+  text-align: center;
+  overflow: hidden; }
+  .divider::after, .divider::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
+  .divider::before {
+    margin-left: -100%;
+    left: -1.25rem; }
+  .divider::after {
+    margin-right: -100%;
+    right: -1.25rem; }
+  .divider:empty::before, .divider:empty::after {
+    right: 0;
+    left: 0; }
+  .divider > span {
+    display: inline-block;
+    vertical-align: middle; }

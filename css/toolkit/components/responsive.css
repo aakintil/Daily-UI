@@ -1,0 +1,84 @@
+/**
+ * @copyright   2010-2015, The Titon Project
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ * @link        http://titon.io
+ */
+.show-retina,
+.show-print {
+  display: none !important; }
+
+@media only screen and (max-width: 640px) {
+  .show-xlarge,
+  .show-large,
+  .show-medium,
+  .show-small,
+  .hide-xsmall {
+    display: none !important; } }
+
+@media only screen and (min-width: 641px) and (max-width: 960px) {
+  .show-xlarge,
+  .show-large,
+  .show-medium,
+  .show-xsmall,
+  .hide-small {
+    display: none !important; } }
+
+@media only screen and (min-width: 961px) and (max-width: 1280px) {
+  .show-xlarge,
+  .show-large,
+  .show-small,
+  .show-xsmall,
+  .hide-medium {
+    display: none !important; } }
+
+@media only screen and (min-width: 1281px) and (max-width: 1680px) {
+  .show-xlarge,
+  .show-medium,
+  .show-small,
+  .show-xsmall,
+  .hide-large {
+    display: none !important; } }
+
+@media only screen and (min-width: 1681px) {
+  .show-large,
+  .show-medium,
+  .show-small,
+  .show-xsmall,
+  .hide-xlarge {
+    display: none !important; } }
+
+@media only screen and (orientation: portrait) {
+  .show-landscape,
+  .hide-portrait {
+    display: none !important; } }
+
+@media only screen and (orientation: landscape) {
+  .show-portrait,
+  .hide-landscape {
+    display: none !important; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .hide-retina {
+    display: none !important; }
+  .show-retina {
+    display: block !important; }
+  table.show-retina {
+    display: table !important; }
+  tr.show-retina {
+    display: table-row !important; }
+  td.show-retina,
+  th.show-retina {
+    display: table-cell !important; } }
+
+@media print {
+  .hide-print {
+    display: none !important; }
+  .show-print {
+    display: block !important; }
+  table.show-print {
+    display: table !important; }
+  tr.show-print {
+    display: table-row !important; }
+  td.show-print,
+  th.show-print {
+    display: table-cell !important; } }

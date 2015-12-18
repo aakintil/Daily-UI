@@ -1,0 +1,28 @@
+@import "toolkit";
+
+$side-padding: 5%; 
+
+body {
+
+
+    header, 
+    nav {
+        padding: 0 $side-padding;     
+    }
+
+    header {
+        background-color: white; 
+        height: 100px; 
+    }
+
+    .grid {
+
+        max-width: 90%; 
+        margin: 0 auto; 
+
+        .comps {
+            height: 150px; 
+            border: 1px solid #ddd; 
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/**
+ * @copyright   2010-2015, The Titon Project
+ * @license     http://opensource.org/licenses/BSD-3-Clause
+ * @link        http://titon.io
+ */
+[class*="icon-"] {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  speak: none; }
+  [class*="icon-"].is-disabled {
+    opacity: 0.5; }
+
+[class*="icon-12"] {
+  width: 12px;
+  height: 12px; }
+
+[class*="icon-16"] {
+  width: 16px;
+  height: 16px; }
+
+[class*="icon-24"] {
+  width: 24px;
+  height: 24px; }
+
+[class*="icon-32"] {
+  width: 32px;
+  height: 32px; }
+
+[class*="icon-64"] {
+  width: 64px;
+  height: 64px; }
+
+.icon--90deg {
+  transform: rotate(90deg); }
+
+.icon--180deg {
+  transform: rotate(180deg); }
+
+.icon--270deg {
+  transform: rotate(270deg); }
+
+.icon--flip {
+  transform: rotateY(180deg); }
+
+.icon--flip-vert {
+  transform: rotateX(180deg); }
