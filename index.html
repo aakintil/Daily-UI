@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <title> Daily UI </title>
 
+        <!-- js -->
+        <script src="js/jquery.2.1.4.js"></script>
+
+        <!-- css -->
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -16,13 +20,25 @@
         </nav>
 
         <section class="grid">
-            <div class="comps col span-6"></div>
+            <div class="comps col span-6 small-12">
+                <a href="img/signup.png" class="js-showcase">
+                    <img src="img/signup.png" alt="">
+                </a>
+            </div>
+
             <div class="comps col span-6"></div>
         </section>
 
         <footer>
             <p> footer </p>
         </footer>
+
+
+        <script src="js/toolkit.js"></script>
+        <script>
+            $('.js-showcase').showcase();
+            console.log( "showcase executed...")
+        </script>
 
     </body>
 </html>
