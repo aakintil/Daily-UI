@@ -17,7 +17,22 @@
         </header>
         <nav>
             <p> filter by: </p>
+            <div class="custom-input js-select">
+                <select style="min-height: 41px; z-index: 1;" name="select" class="js-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
         </nav>
+
 
         <section class="grid">
             <div class="comps col span-6 small-12">
@@ -37,7 +52,11 @@
         <script src="js/toolkit.js"></script>
         <script>
             $('.js-showcase').showcase();
-            console.log( "showcase executed...")
+            console.log( "showcase executed..."); 
+
+            $('select').inputSelect();
+            console.log( "'select' filter executed..."); 
+
         </script>
 
     </body>
