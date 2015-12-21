@@ -1,6 +1,15 @@
+// IMPORTS
 @import "toolkit";
 @import "fonts/firaSans"; 
 @import "fonts/hindVadodara"; 
+
+// VARIABLES
+// fonts
+$hv_l: "HindVadodara Light"; 
+$hv_r: "HindVadodara Reg"; 
+
+// text
+$dflt_lsp: 2.5px; 
 
 
 $side-padding: 5%; 
@@ -8,17 +17,37 @@ $side-padding: 5%;
 body {
 
 
+    // HEADER + NAV
     header, 
     nav {
         padding: 0 $side-padding;     
     }
 
+    // HEADER 
     header {
         background-color: white; 
         height: 100px; 
-        font-family: "HindVadodara Light";
-        text-transform: uppercase;
-        letter-spacing: 2px; 
+        font-family: $hv_r;
+        letter-spacing: $dflt_lsp; 
+        padding-top: 20px;
+        border: 1px solid blue;
+        box-shadow: 0 5px 10px 1px #DDD;
+        
+        h1 {
+            color: #555;
+        }
+    }
+    
+    // NAV
+    nav {
+        
+        p {
+            display: inline-block; 
+            text-transform: uppercase;
+            font-family: $hv_l; 
+            letter-spacing: $dflt_lsp - 1; 
+            margin-right: 20px; 
+        }
     }
 
     .grid {
@@ -26,12 +55,6 @@ body {
         max-width: 90%; 
         margin: 0 auto; 
 
-//        .comps:before {
-//            content: ' ';
-//            display: inline-block;
-//            vertical-align: middle;
-//            height: 100%;
-//        }
         .comps {
             height: 150px; 
             border: 1px solid #ddd; 

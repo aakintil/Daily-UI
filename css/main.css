@@ -3340,19 +3340,39 @@ kbd {
 
 @font-face {
   font-family: "FiraSans Bold";
-  src: url("../fonts/FiraSans/FiraSans-Bold.ttf") format("truetype"); }
+  src: url("../fonts/FiraSans/Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "FiraSans Light";
-  src: url("../fonts/FiraSans/FiraSans-Light.ttf") format("truetype"); }
+  src: url("../fonts/FiraSans/Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: "FiraSans Med";
-  src: url("../fonts/FiraSans/FiraSans-Medium.ttf") format("truetype"); }
+  src: url("../fonts/FiraSans/Med.ttf") format("truetype"); }
 
 @font-face {
   font-family: "FiraSans Reg";
-  src: url("../fonts/FiraSans/FiraSans-Regular.ttf") format("truetype"); }
+  src: url("../fonts/FiraSans/Reg.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HindVadodara Bold";
+  src: url("../fonts/HindVadodara/Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HindVadodara Light";
+  src: url("../fonts/HindVadodara/Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HindVadodara Med";
+  src: url("../fonts/HindVadodara/Med.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HindVadodara Reg";
+  src: url("../fonts/HindVadodara/Reg.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HindVadodara SemiBold";
+  src: url("../fonts/HindVadodara/SemiBold.ttf") format("truetype"); }
 
 body header,
 body nav {
@@ -3361,9 +3381,20 @@ body nav {
 body header {
   background-color: white;
   height: 100px;
-  font-family: "HindVadodara Light";
+  font-family: "HindVadodara Reg";
+  letter-spacing: 2.5px;
+  padding-top: 20px;
+  border: 1px solid blue;
+  box-shadow: 0 5px 10px 1px #DDD; }
+  body header h1 {
+    color: #555; }
+
+body nav p {
+  display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  font-family: "HindVadodara Light";
+  letter-spacing: 1.5px;
+  margin-right: 20px; }
 
 body .grid {
   max-width: 90%;

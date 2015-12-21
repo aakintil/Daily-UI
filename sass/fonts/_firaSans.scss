@@ -1,10 +1,10 @@
-import "fontFace"; 
+@import "fontFace"; 
 
 // bold
 @include font-face( "FiraSans Bold", "../fonts/FiraSans/Bold", null, null, ttf );
 // light
 @include font-face( "FiraSans Light", "../fonts/FiraSans/Light", null, null, ttf );
 // med
-@include font-face( "FiraSans Med", "../fonts/FiraSans/Medium", null, null, ttf );
+@include font-face( "FiraSans Med", "../fonts/FiraSans/Med", null, null, ttf );
 // reg
-@include font-face( "FiraSans Reg", "../fonts/FiraSans/Regular", null, null, ttf );
+@include font-face( "FiraSans Reg", "../fonts/FiraSans/Reg", null, null, ttf );
