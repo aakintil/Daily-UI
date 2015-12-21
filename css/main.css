@@ -3338,13 +3338,32 @@ kbd {
   th.show-print {
     display: table-cell !important; } }
 
+@font-face {
+  font-family: "FiraSans Bold";
+  src: url("../fonts/FiraSans/FiraSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "FiraSans Light";
+  src: url("../fonts/FiraSans/FiraSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "FiraSans Med";
+  src: url("../fonts/FiraSans/FiraSans-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "FiraSans Reg";
+  src: url("../fonts/FiraSans/FiraSans-Regular.ttf") format("truetype"); }
+
 body header,
 body nav {
   padding: 0 5%; }
 
 body header {
   background-color: white;
-  height: 100px; }
+  height: 100px;
+  font-family: "HindVadodara Light";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 body .grid {
   max-width: 90%;

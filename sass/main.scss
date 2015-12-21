@@ -1,5 +1,7 @@
 @import "toolkit";
-@import "firaSans"; 
+@import "fonts/firaSans"; 
+@import "fonts/hindVadodara"; 
+
 
 $side-padding: 5%; 
 
@@ -14,6 +16,9 @@ body {
     header {
         background-color: white; 
         height: 100px; 
+        font-family: "HindVadodara Light";
+        text-transform: uppercase;
+        letter-spacing: 2px; 
     }
 
     .grid {
