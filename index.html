@@ -20,7 +20,8 @@
         <nav>
             <p> filter by: </p>
             <div class="custom-input js-select">
-                <select style="min-height: 41px; z-index: 1;" name="select" class="js-select">
+                <select id="filter" style="min-height: 41px; z-index: 1;" name="select" class="js-select">
+                    <option value="default">None</option>
                     <option value="1">Day 1 - Sign Up</option>
                     <option value="2">Day 2</option>
                     <option value="3">Day 3</option>
@@ -47,13 +48,15 @@
         </nav>
 
         <section class="grid">
-            <div class="comps col small-12 medium-6 large-6">
+            <div class="comps col small-12 medium-6 large-6" value="1">
                 <a href="img/signup.png" class="js-showcase">
                     <img src="img/signup.png" alt="">
                 </a>
             </div>
 
-            <div class="comps col small-12 medium-6 large-6"></div>
+            <div class="comps col small-12 medium-6 large-6" value="2">
+
+            </div>
             <!--end of section-->
         </section>
 
@@ -70,6 +73,25 @@
 
             $('select').inputSelect();
             console.log( "'select' filter executed..."); 
+
+        </script>
+
+        <script>
+            $( "#filter" ).on( "change", function() {
+                console.log( 'getting the value ', $( "#filter" ).val() ); 
+                var selected = $( "#filter" ).val(); 
+
+                if ( selected === "default" ) {
+                    $( '.comps' ).show();
+                } else {
+                    $( '.comps' ).each( function( i ) {
+                        if ( selected !== $( this ).attr( "value" ) ) {
+                            $( this ).hide();
+                        }
+                    })
+                }
+
+            })
 
         </script>
 

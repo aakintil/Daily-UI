@@ -30,23 +30,43 @@ body {
         font-family: $hv_r;
         letter-spacing: $dflt_lsp; 
         padding-top: 20px;
-        border: 1px solid blue;
         box-shadow: 0 5px 10px 1px #DDD;
-        
+
         h1 {
             color: #555;
         }
     }
-    
+
     // NAV
     nav {
-        
+
+        margin: 50px 0 25px 0; 
+
         p {
             display: inline-block; 
             text-transform: uppercase;
-            font-family: $hv_l; 
+            font-family: $hv_r; 
             letter-spacing: $dflt_lsp - 1; 
             margin-right: 20px; 
+            font-size: 17px;
+        }
+
+        .custom-input .select {
+            border-radius: 0; 
+        }
+
+        // dropdown and it's contents
+        .select, 
+        .select + .drop a {
+            font-family: $hv_l;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none; 
+        }
+        
+        .drop {
+            background-color: #eee; 
+            padding: 5px; 
         }
     }
 

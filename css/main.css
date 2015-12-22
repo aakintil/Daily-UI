@@ -3384,17 +3384,30 @@ body header {
   font-family: "HindVadodara Reg";
   letter-spacing: 2.5px;
   padding-top: 20px;
-  border: 1px solid blue;
   box-shadow: 0 5px 10px 1px #DDD; }
   body header h1 {
     color: #555; }
 
-body nav p {
-  display: inline-block;
-  text-transform: uppercase;
-  font-family: "HindVadodara Light";
-  letter-spacing: 1.5px;
-  margin-right: 20px; }
+body nav {
+  margin: 50px 0 25px 0; }
+  body nav p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "HindVadodara Reg";
+    letter-spacing: 1.5px;
+    margin-right: 20px;
+    font-size: 17px; }
+  body nav .custom-input .select {
+    border-radius: 0; }
+  body nav .select,
+  body nav .select + .drop a {
+    font-family: "HindVadodara Light";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none; }
+  body nav .drop {
+    background-color: #eee;
+    padding: 5px; }
 
 body .grid {
   max-width: 90%;
