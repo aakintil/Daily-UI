@@ -305,7 +305,8 @@ $grid-columns-large: 12 !default;
 $grid-columns-xlarge: 18 !default;
 
 $grid-width: 100% !default;
-$grid-gutter: false !default;
+//$grid-gutter: false !default;
+$grid-gutter: 25px !default;
 $grid-push-pull: true !default;
 
 $grid-sizes: (
