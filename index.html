@@ -21,7 +21,7 @@
             <p> filter by: </p>
             <div class="custom-input js-select">
                 <select id="filter" style="min-height: 41px; z-index: 1;" name="select" class="js-select">
-                    <option value="default">None</option>
+                    <option value="default" selected>None</option>
                     <option value="1">Day 1 - Sign Up</option>
                     <option value="2">Day 2</option>
                     <option value="3">Day 3</option>
@@ -78,7 +78,8 @@
 
         </script>
 
-        <script>
+        <script> 
+            // have to figure out how to make a default selected field 
             $( "#filter" ).on( "change", function() {
                 console.log( 'getting the value ', $( "#filter" ).val() ); 
                 var selected = $( "#filter" ).val(); 

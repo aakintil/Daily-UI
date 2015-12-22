@@ -46,7 +46,7 @@ body {
         box-shadow: 0 5px 10px 1px #DDD;
 
         h1 {
-            color: #555;
+            color: #F89406;
         }
     }
 
@@ -62,10 +62,12 @@ body {
             letter-spacing: $dflt_lsp - 1; 
             margin-right: 20px; 
             font-size: 17px;
+            color: #999;
         }
 
         .custom-input .select {
             border-radius: 0; 
+            border: none; 
         }
 
         // dropdown and it's contents
@@ -75,10 +77,24 @@ body {
             letter-spacing: 1px;
             text-transform: uppercase;
             text-decoration: none; 
+            color: #6C7A89;
+        }
+
+        .select-label {
+            color: #F89406;
+            font-family: $hv_m;
+        }
+
+        select {
+            color: #ABB7B7; 
+        }
+
+        .select + .drop a:hover {
+            background-color: #F89406;
         }
 
         .drop {
-            background-color: #eee; 
+            background-color: #ECF0F1; 
             padding: 5px; 
         }
     }

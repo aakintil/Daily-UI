@@ -3409,7 +3409,7 @@ body header {
   padding-top: 20px;
   box-shadow: 0 5px 10px 1px #DDD; }
   body header h1 {
-    color: #555; }
+    color: #F89406; }
 
 body nav {
   margin: 50px 0 25px 0; }
@@ -3419,17 +3419,27 @@ body nav {
     font-family: "HindVadodara Reg";
     letter-spacing: 1.5px;
     margin-right: 20px;
-    font-size: 17px; }
+    font-size: 17px;
+    color: #999; }
   body nav .custom-input .select {
-    border-radius: 0; }
+    border-radius: 0;
+    border: none; }
   body nav .select,
   body nav .select + .drop a {
     font-family: "HindVadodara Light";
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #6C7A89; }
+  body nav .select-label {
+    color: #F89406;
+    font-family: "HindVadodara Med"; }
+  body nav select {
+    color: #ABB7B7; }
+  body nav .select + .drop a:hover {
+    background-color: #F89406; }
   body nav .drop {
-    background-color: #eee;
+    background-color: #ECF0F1;
     padding: 5px; }
 
 body .grid {
