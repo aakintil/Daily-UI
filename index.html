@@ -84,9 +84,10 @@
                 if ( selected === "default" ) {
                     $( '.comps' ).show();
                 } else {
+                    $( '.comps' ).hide();  
                     $( '.comps' ).each( function( i ) {
-                        if ( selected !== $( this ).attr( "value" ) ) {
-                            $( this ).hide();
+                        if ( selected === $( this ).attr( "value" ) ) {
+                            $( this ).show();
                         }
                     })
                 }
