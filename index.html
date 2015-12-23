@@ -59,7 +59,7 @@
                     <img src="img/credit.png" alt="Coming Soon">
                 </a>
             </div>
-            
+
             <div class="comps col small-12 medium-6 large-6 end" value="3">
                 <a href="img/comingSoon.png" class="js-showcase" title='Coming Soon'>
                     <img src="img/comingSoon.png" alt="Coming Soon">
@@ -91,15 +91,16 @@
                 var selected = $( "#filter" ).val(); 
 
                 if ( selected === "default" ) {
-                    $( '.comps' ).show();
+                    $( '.comps' ).fadeTo( 1000, 1 );
                 } else {
-                    $( '.comps' ).hide();  
+                    $( '.comps' ).fadeTo( 500, 0 );
+
                     $( '.comps' ).each( function( i ) {
                         if ( selected === $( this ).attr( "value" ) ) {
-                            $( this ).show();
+                            $( this ).fadeTo( 500, 1 );
                         }
                     })
-                }
+                } 
 
             })
 
@@ -108,3 +109,19 @@
         <!--end of body-->
     </body>
 </html>
+
+
+
+
+<!-- working 
+if ( selected === "default" ) {
+$( '.comps' ).show();
+} else {
+$( '.comps' ).hide();  
+$( '.comps' ).each( function( i ) {
+if ( selected === $( this ).attr( "value" ) ) {
+$( this ).show();
+}
+})
+}
+-->
