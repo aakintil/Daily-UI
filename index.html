@@ -85,24 +85,26 @@
         </script>
 
         <script> 
-            // have to figure out how to make a default selected field 
+
             $( "#filter" ).on( "change", function() {
                 var selected = $( "#filter" ).val(), 
                     id = "#"+selected,
                     comp = $( id )[0]; 
 
-                console.log( 'getting the value ', $( id )[0] ); 
+                ( selected === "default" ) ? showAll() : filter( comp );  
+            }); 
 
-                if ( selected === "default" ) {
-                    $( '.comps' ).fadeTo( 1000, 1 );
-                } else {
-                    $( '.comps' ).fadeTo( 1000, 0, function() {
-                        $( '.comps' ).not( $( comp ) ).hide();
-                        $( comp ).fadeTo( 500, 1 );
-                    });
-                } 
-            })
+            function showAll() {
+                $( '.comps' ).fadeTo( 1000, 1 );
+            }
 
+            function filter( comp ) {
+                $( '.comps' ).fadeTo( 1000, 0, function() {
+                    $( '.comps' ).not( $( comp ) ).hide();
+                    $( comp ).fadeTo( 500, 1 );
+                });
+            }
+            
         </script>
 
         <!--end of body-->
