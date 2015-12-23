@@ -13,7 +13,9 @@ $hv_m: "HindVadodara Med";
 $dflt_lsp: 2.5px; 
 
 
+// box model
 $side-padding: 5%; 
+$dflt_mg_b: 1.78571%;
 
 body {
 
@@ -98,6 +100,7 @@ body {
             padding: 5px; 
         }
     }
+    
 
     .grid {
 
@@ -107,6 +110,7 @@ body {
         .comps {
             height: 150px; 
             overflow: hidden;
+            margin-bottom: $dflt_mg_b;
 
             img {
                 max-width: 100%; 

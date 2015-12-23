@@ -3447,7 +3447,8 @@ body .grid {
   margin: 0 auto; }
   body .grid .comps {
     height: 150px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 1.78571%; }
     body .grid .comps img {
       max-width: 100%;
       height: auto;
