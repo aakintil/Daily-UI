@@ -3466,3 +3466,14 @@ body footer {
     letter-spacing: 2.5px;
     font-family: "HindVadodara Light";
     color: #999; }
+
+@media (max-width: 965px) {
+  .comps {
+    margin-left: 0 !important; } }
+
+@media (min-width: 965px) {
+  .comps:nth-child(odd) {
+    margin-left: 0 !important; }
+  .comps:nth-child(even) {
+    margin-left: 1.78571% !important;
+    border: 1px solid red; } }
