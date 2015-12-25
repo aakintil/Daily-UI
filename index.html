@@ -95,12 +95,12 @@
             }); 
 
             function showAll() {
-                $( '.comps' ).fadeTo( 1000, 1 );
+                $( '.comps' ).css({ display: "block" }).fadeTo( 1000, 1 );
             }
 
             function filter( comp ) {
                 $( '.comps' ).fadeTo( 1000, 0, function() {
-                    $( '.comps' ).not( $( comp ) ).hide();
+                    $( '.comps' ).not( $( comp ) ).hide().css({ display: "none" });
                     $( comp ).fadeTo( 500, 1 );
                 });
             }
