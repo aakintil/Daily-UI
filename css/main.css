@@ -3475,5 +3475,4 @@ body footer {
   .comps:nth-child(odd) {
     margin-left: 0 !important; }
   .comps:nth-child(even) {
-    margin-left: 1.78571% !important;
-    border: 1px solid red; } }
+    margin-left: 1.78571% !important; } }

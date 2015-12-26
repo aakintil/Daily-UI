@@ -141,6 +141,7 @@ body {
 
 
 
+
 // media queries
 // the margin left fucks up the layout so we have to remove it and even it out
 @media ( max-width: 965px ) {
@@ -156,7 +157,6 @@ body {
     }
     .comps:nth-child(even) {
         margin-left: $dflt_mg_b !important;
-        border: 1px solid red;
     }
 }
 
