@@ -22,10 +22,14 @@ $side-padding: 5%;
 $dflt_mg_b: 1.78571%;
 //1.78571%;
 
+// colors
+$blue: #4285f4; 
+$grey: #787878; 
+
 body {
 
     padding: 10% 25% 0px;
-    
+
     // TOOLKIT OVERLAY
     #toolkit-showcase-1 {
         .showcase-close, 
@@ -38,11 +42,29 @@ body {
             letter-spacing: 1px; 
         }
     }
-    
+
     // Header
     header {
-        font-family: $pn_r;
-        letter-spacing: 0.2em; 
+        position: relative;
+        height: 150px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em; 
+
+        h1 {
+            color: $grey; 
+            float: left;
+            font-family: $pn_l;
+        }
+
+        nav {
+            float: right;
+
+            p {
+                margin-top: 1.8em;
+                color: $blue;
+                font-family: $pn_r;
+            }
+        }
     }
 
     // The Image Grid

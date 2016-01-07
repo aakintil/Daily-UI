@@ -3402,7 +3402,19 @@ body {
     font-family: "HindVadodara Med";
     letter-spacing: 1px; }
   body header {
-    font-family: "ProximaNova Reg";
-    letter-spacing: 0.2em; }
+    position: relative;
+    height: 150px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em; }
+    body header h1 {
+      color: #787878;
+      float: left;
+      font-family: "ProximaNova Light"; }
+    body header nav {
+      float: right; }
+      body header nav p {
+        margin-top: 1.8em;
+        color: #4285f4;
+        font-family: "ProximaNova Reg"; }
   body .grid {
     display: none; }
