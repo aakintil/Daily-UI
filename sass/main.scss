@@ -11,7 +11,8 @@ $hv_m: "HindVadodara Med";
 
 $pn_l: "ProximaNova Light"; 
 $pn_r: "ProximaNova Reg"; 
-$pn_b: "ProximaNova Med"; 
+$pn_sb: "ProximaNova SemiBold"; 
+$pn_tn: "ProximaNova Thin"; 
 
 // text
 $dflt_lsp: 2.5px; 
@@ -58,17 +59,80 @@ body {
 
         nav {
             float: right;
+            width: auto; 
 
-            p {
-                margin-top: 1.8em;
+            .custom-input {
+                top: 8px; 
+                clear: both;
                 color: $blue;
                 font-family: $pn_r;
+
+
+                .select {
+                    background: none;
+                    border: none;
+                    border-radius: 0;
+                }
+
+                .drop {
+                    padding: 5px; 
+                    width: 20em;
+                    background-color: white;
+
+                    a {
+                        text-decoration: none;
+                        color: $grey; 
+                    }
+
+                    a:hover {
+                        background-color: $blue;
+                        color: white;
+                    }
+
+                }
+
+                .select-arrow .caret-down {
+                    border-top-color: $blue;
+                }
             }
         }
     }
 
     // The Image Grid
     .grid {
-        display: none;
+        margin: 0 auto; 
+
+        .comps {
+            height: 300px; 
+            overflow: hidden;
+            margin-bottom: $dflt_mg_b;
+
+            img {
+                max-width: 100%; 
+                height: auto; 
+                display: block;
+            }
+        }
     }
+}
+
+
+// media queries
+// the margin left fucks up the layout so we have to remove it and even it out
+@media ( max-width: 965px ) {
+    // HAVE TO CHANGE THE .comps HEIGHT WHEN THE DISPLAY IS LESS THAN 1036px! 
+    
+//    .comps {
+//        margin-left: 0 !important;
+//    }
+}
+
+@media ( min-width: 965px ) {
+//
+//    .comps:nth-child(odd) {
+//        margin-left: 0 !important;
+//    }
+//    .comps:nth-child(even) {
+//        margin-left: $dflt_mg_b !important;
+//    }
 }

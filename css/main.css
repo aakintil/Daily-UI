@@ -3362,8 +3362,8 @@ kbd {
   src: url("../fonts/ProximaNova/Light.otf") format("opentype"); }
 
 @font-face {
-  font-family: "ProximaNova Med";
-  src: url("../fonts/ProximaNova/Med.otf") format("opentype"); }
+  font-family: "ProximaNova Thin";
+  src: url("../fonts/ProximaNova/Thin.otf") format("opentype"); }
 
 @font-face {
   font-family: "ProximaNova Reg";
@@ -3411,10 +3411,36 @@ body {
       float: left;
       font-family: "ProximaNova Light"; }
     body header nav {
-      float: right; }
-      body header nav p {
-        margin-top: 1.8em;
+      float: right;
+      width: auto; }
+      body header nav .custom-input {
+        top: 8px;
+        clear: both;
         color: #4285f4;
         font-family: "ProximaNova Reg"; }
+        body header nav .custom-input .select {
+          background: none;
+          border: none;
+          border-radius: 0; }
+        body header nav .custom-input .drop {
+          padding: 5px;
+          width: 20em;
+          background-color: white; }
+          body header nav .custom-input .drop a {
+            text-decoration: none;
+            color: #787878; }
+          body header nav .custom-input .drop a:hover {
+            background-color: #4285f4;
+            color: white; }
+        body header nav .custom-input .select-arrow .caret-down {
+          border-top-color: #4285f4; }
   body .grid {
-    display: none; }
+    margin: 0 auto; }
+    body .grid .comps {
+      height: 300px;
+      overflow: hidden;
+      margin-bottom: 1.78571%; }
+      body .grid .comps img {
+        max-width: 100%;
+        height: auto;
+        display: block; }
