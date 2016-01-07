@@ -1,6 +1,6 @@
 // IMPORTS
 @import "toolkit";
-@import "fonts/firaSans"; 
+@import "fonts/proximaNova"; 
 @import "fonts/hindVadodara"; 
 
 // VARIABLES
@@ -8,6 +8,10 @@
 $hv_l: "HindVadodara Light"; 
 $hv_r: "HindVadodara Reg"; 
 $hv_m: "HindVadodara Med"; 
+
+$pn_l: "ProximaNova Light"; 
+$pn_r: "ProximaNova Reg"; 
+$pn_b: "ProximaNova Med"; 
 
 // text
 $dflt_lsp: 2.5px; 
@@ -20,6 +24,8 @@ $dflt_mg_b: 1.78571%;
 
 body {
 
+    padding: 10% 25% 0px;
+    
     // TOOLKIT OVERLAY
     #toolkit-showcase-1 {
         .showcase-close, 
@@ -32,131 +38,15 @@ body {
             letter-spacing: 1px; 
         }
     }
-
-    // HEADER + NAV
-    header, 
-    nav {
-        padding: 0 $side-padding;     
-    }
-
-    // HEADER 
+    
+    // Header
     header {
-        background-color: white; 
-        height: 100px; 
-        font-family: $hv_r;
-        letter-spacing: $dflt_lsp; 
-        padding-top: 20px;
-        box-shadow: 0 5px 10px 1px #DDD;
-
-        h1 {
-            color: #F89406;
-        }
+        font-family: $pn_r;
+        letter-spacing: 0.2em; 
     }
 
-    // NAV
-    nav {
-
-        margin: 50px 0 25px 0; 
-
-        p {
-            display: inline-block; 
-            text-transform: uppercase;
-            font-family: $hv_r; 
-            letter-spacing: $dflt_lsp - 1; 
-            margin-right: 20px; 
-            font-size: 17px;
-            color: #999;
-        }
-
-        .custom-input .select {
-            border-radius: 0; 
-            border: none; 
-        }
-
-        // dropdown and it's contents
-        .select, 
-        .select + .drop a {
-            font-family: $hv_l;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-decoration: none; 
-            color: #6C7A89;
-        }
-
-        .select-label {
-            color: #F89406;
-            font-family: $hv_m;
-        }
-
-        select {
-            color: #ABB7B7; 
-        }
-
-        .select + .drop a:hover {
-            background-color: #F89406;
-        }
-
-        .drop {
-            background-color: #ECF0F1; 
-            padding: 5px; 
-        }
-    }
-
-
+    // The Image Grid
     .grid {
-
-        max-width: 90%; 
-        margin: 0 auto; 
-
-        .comps {
-            height: 150px; 
-            overflow: hidden;
-            margin-bottom: $dflt_mg_b;
-
-            img {
-                max-width: 100%; 
-                height: auto; 
-                display: block;
-            }
-        }
-
-    }
-
-    footer {
-        background-color: #eee; 
-        height: 50px; 
-        text-align: center; 
-        position: absolute; 
-        width: 100%; 
-        bottom: 0;
-
-        p {
-            opacity: 0.7;
-            letter-spacing: $dflt_lsp; 
-            font-family: $hv_l; 
-            color: #999;
-        }
+        display: none;
     }
 }
-
-
-
-
-// media queries
-// the margin left fucks up the layout so we have to remove it and even it out
-@media ( max-width: 965px ) {
-    .comps {
-        margin-left: 0 !important;
-    }
-}
-
-@media ( min-width: 965px ) {
-
-    .comps:nth-child(odd) {
-        margin-left: 0 !important;
-    }
-    .comps:nth-child(even) {
-        margin-left: $dflt_mg_b !important;
-    }
-}
-

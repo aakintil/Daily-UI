@@ -3354,20 +3354,24 @@ kbd {
     display: table-cell !important; } }
 
 @font-face {
-  font-family: "FiraSans Bold";
-  src: url("../fonts/FiraSans/Bold.ttf") format("truetype"); }
+  font-family: "ProximaNova Bold";
+  src: url("../fonts/ProximaNova/Bold.otf") format("opentype"); }
 
 @font-face {
-  font-family: "FiraSans Light";
-  src: url("../fonts/FiraSans/Light.ttf") format("truetype"); }
+  font-family: "ProximaNova Light";
+  src: url("../fonts/ProximaNova/Light.otf") format("opentype"); }
 
 @font-face {
-  font-family: "FiraSans Med";
-  src: url("../fonts/FiraSans/Med.ttf") format("truetype"); }
+  font-family: "ProximaNova Med";
+  src: url("../fonts/ProximaNova/Med.otf") format("opentype"); }
 
 @font-face {
-  font-family: "FiraSans Reg";
-  src: url("../fonts/FiraSans/Reg.ttf") format("truetype"); }
+  font-family: "ProximaNova Reg";
+  src: url("../fonts/ProximaNova/Reg.otf") format("opentype"); }
+
+@font-face {
+  font-family: "ProximaNova SemiBold";
+  src: url("../fonts/ProximaNova/SemiBold.otf") format("opentype"); }
 
 @font-face {
   font-family: "HindVadodara Bold";
@@ -3389,90 +3393,16 @@ kbd {
   font-family: "HindVadodara SemiBold";
   src: url("../fonts/HindVadodara/SemiBold.ttf") format("truetype"); }
 
-body #toolkit-showcase-1 .showcase-close,
-body #toolkit-showcase-1 .showcase-caption {
-  color: white; }
-
-body #toolkit-showcase-1 .showcase-caption {
-  font-family: "HindVadodara Med";
-  letter-spacing: 1px; }
-
-body header,
-body nav {
-  padding: 0 5%; }
-
-body header {
-  background-color: white;
-  height: 100px;
-  font-family: "HindVadodara Reg";
-  letter-spacing: 2.5px;
-  padding-top: 20px;
-  box-shadow: 0 5px 10px 1px #DDD; }
-  body header h1 {
-    color: #F89406; }
-
-body nav {
-  margin: 50px 0 25px 0; }
-  body nav p {
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: "HindVadodara Reg";
-    letter-spacing: 1.5px;
-    margin-right: 20px;
-    font-size: 17px;
-    color: #999; }
-  body nav .custom-input .select {
-    border-radius: 0;
-    border: none; }
-  body nav .select,
-  body nav .select + .drop a {
-    font-family: "HindVadodara Light";
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #6C7A89; }
-  body nav .select-label {
-    color: #F89406;
-    font-family: "HindVadodara Med"; }
-  body nav select {
-    color: #ABB7B7; }
-  body nav .select + .drop a:hover {
-    background-color: #F89406; }
-  body nav .drop {
-    background-color: #ECF0F1;
-    padding: 5px; }
-
-body .grid {
-  max-width: 90%;
-  margin: 0 auto; }
-  body .grid .comps {
-    height: 150px;
-    overflow: hidden;
-    margin-bottom: 1.78571%; }
-    body .grid .comps img {
-      max-width: 100%;
-      height: auto;
-      display: block; }
-
-body footer {
-  background-color: #eee;
-  height: 50px;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  bottom: 0; }
-  body footer p {
-    opacity: 0.7;
-    letter-spacing: 2.5px;
-    font-family: "HindVadodara Light";
-    color: #999; }
-
-@media (max-width: 965px) {
-  .comps {
-    margin-left: 0 !important; } }
-
-@media (min-width: 965px) {
-  .comps:nth-child(odd) {
-    margin-left: 0 !important; }
-  .comps:nth-child(even) {
-    margin-left: 1.78571% !important; } }
+body {
+  padding: 10% 25% 0px; }
+  body #toolkit-showcase-1 .showcase-close,
+  body #toolkit-showcase-1 .showcase-caption {
+    color: white; }
+  body #toolkit-showcase-1 .showcase-caption {
+    font-family: "HindVadodara Med";
+    letter-spacing: 1px; }
+  body header {
+    font-family: "ProximaNova Reg";
+    letter-spacing: 0.2em; }
+  body .grid {
+    display: none; }

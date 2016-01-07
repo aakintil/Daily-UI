@@ -1,0 +1,12 @@
+@import "fontFace"; 
+
+// bold
+@include font-face( "ProximaNova Bold", "../fonts/ProximaNova/Bold", null, null, otf );
+// light
+@include font-face( "ProximaNova Light", "../fonts/ProximaNova/Light", null, null, otf );
+// med
+@include font-face( "ProximaNova Med", "../fonts/ProximaNova/Med", null, null, otf );
+// reg
+@include font-face( "ProximaNova Reg", "../fonts/ProximaNova/Reg", null, null, otf );
+// semi bold
+@include font-face( "ProximaNova SemiBold", "../fonts/ProximaNova/SemiBold", null, null, otf );
