@@ -3403,7 +3403,7 @@ body {
     letter-spacing: 1px; }
   body header {
     position: relative;
-    height: 150px;
+    height: 100px;
     text-transform: uppercase;
     letter-spacing: 0.15em; }
     body header h1 {
@@ -3432,6 +3432,8 @@ body {
           body header nav .custom-input .drop a:hover {
             background-color: #4285f4;
             color: white; }
+        body header nav .custom-input .select-arrow {
+          padding-right: 0; }
         body header nav .custom-input .select-arrow .caret-down {
           border-top-color: #4285f4; }
   body .grid {
@@ -3444,3 +3446,11 @@ body {
         max-width: 100%;
         height: auto;
         display: block; }
+    body .grid .caption h4 {
+      font-family: "ProximaNova SemiBold"; }
+    body .grid .caption p {
+      font-family: "ProximaNova Reg";
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #787878;
+      margin: 0; }

@@ -12,6 +12,7 @@ $hv_m: "HindVadodara Med";
 $pn_l: "ProximaNova Light"; 
 $pn_r: "ProximaNova Reg"; 
 $pn_sb: "ProximaNova SemiBold"; 
+$pn_b: "ProximaNova Bold"; 
 $pn_tn: "ProximaNova Thin"; 
 
 // text
@@ -47,7 +48,7 @@ body {
     // Header
     header {
         position: relative;
-        height: 150px;
+        height: 100px;
         text-transform: uppercase;
         letter-spacing: 0.15em; 
 
@@ -91,6 +92,10 @@ body {
 
                 }
 
+                .select-arrow {
+                    padding-right: 0;
+                }
+                
                 .select-arrow .caret-down {
                     border-top-color: $blue;
                 }
@@ -113,6 +118,21 @@ body {
                 display: block;
             }
         }
+
+        .caption {
+
+            h4 {
+                font-family: $pn_sb;
+            }
+            
+            p {
+                font-family: $pn_r;
+                text-transform: uppercase; 
+                letter-spacing: 0.15em;
+                color: $grey;
+                margin: 0;
+            }
+        }
     }
 }
 
@@ -121,18 +141,18 @@ body {
 // the margin left fucks up the layout so we have to remove it and even it out
 @media ( max-width: 965px ) {
     // HAVE TO CHANGE THE .comps HEIGHT WHEN THE DISPLAY IS LESS THAN 1036px! 
-    
-//    .comps {
-//        margin-left: 0 !important;
-//    }
+
+    //    .comps {
+    //        margin-left: 0 !important;
+    //    }
 }
 
 @media ( min-width: 965px ) {
-//
-//    .comps:nth-child(odd) {
-//        margin-left: 0 !important;
-//    }
-//    .comps:nth-child(even) {
-//        margin-left: $dflt_mg_b !important;
-//    }
+    //
+    //    .comps:nth-child(odd) {
+    //        margin-left: 0 !important;
+    //    }
+    //    .comps:nth-child(even) {
+    //        margin-left: $dflt_mg_b !important;
+    //    }
 }
