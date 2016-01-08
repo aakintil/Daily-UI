@@ -3476,7 +3476,7 @@ body {
       letter-spacing: 0.15em;
       font-size: 1.5em; }
   body footer {
-    margin-top: 8em;
+    margin: 8em 0 2em 0;
     text-align: center; }
     body footer p {
       font-family: "ProximaNova Reg";
