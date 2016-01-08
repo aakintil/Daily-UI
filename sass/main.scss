@@ -95,7 +95,7 @@ body {
                 .select-arrow {
                     padding-right: 0;
                 }
-                
+
                 .select-arrow .caret-down {
                     border-top-color: $blue;
                 }
@@ -107,10 +107,24 @@ body {
     .grid {
         margin: 0 auto; 
 
+        .mgT5 {
+            margin-top: 5em; 
+        }
+
+        .padR {
+            padding-right: 5px; 
+        }
+
+        .padL {
+            padding-left: 5px;
+        }
+
         .comps {
-            height: 300px; 
+            //            height: 300px; 
             overflow: hidden;
             margin-bottom: $dflt_mg_b;
+            border: 1px solid #eee;
+            //            box-shadow: 2.5px 2.5px 7px 2px #eee;
 
             img {
                 max-width: 100%; 
@@ -124,7 +138,7 @@ body {
             h4 {
                 font-family: $pn_sb;
             }
-            
+
             p {
                 font-family: $pn_r;
                 text-transform: uppercase; 
