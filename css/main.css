@@ -3399,8 +3399,9 @@ body {
   body #toolkit-showcase-1 .showcase-caption {
     color: white; }
   body #toolkit-showcase-1 .showcase-caption {
-    font-family: "HindVadodara Med";
-    letter-spacing: 1px; }
+    font-family: "ProximaNova Light";
+    text-transform: uppercase;
+    letter-spacing: 0.15em; }
   body header {
     position: relative;
     height: 100px;
@@ -3423,9 +3424,9 @@ body {
           border: none;
           border-radius: 0; }
         body header nav .custom-input .drop {
-          padding: 5px;
-          width: 20em;
-          background-color: white; }
+          background-color: white;
+          width: 150%;
+          text-align: right; }
           body header nav .custom-input .drop a {
             text-decoration: none;
             color: #787878; }
@@ -3440,6 +3441,8 @@ body {
     margin: 0 auto; }
     body .grid .mgT5 {
       margin-top: 5em; }
+    body .grid .mgTnone {
+      margin-top: 0 !important; }
     body .grid .padR {
       padding-right: 5px; }
     body .grid .padL {
@@ -3453,10 +3456,53 @@ body {
         height: auto;
         display: block; }
     body .grid .caption h4 {
-      font-family: "ProximaNova SemiBold"; }
+      font-family: "ProximaNova SemiBold";
+      letter-spacing: 0.075em;
+      color: #5c5c5c; }
     body .grid .caption p {
       font-family: "ProximaNova Reg";
       text-transform: uppercase;
       letter-spacing: 0.15em;
       color: #787878;
       margin: 0; }
+  body #coming {
+    background-color: #4285f4;
+    color: white;
+    text-align: center;
+    padding: 5%; }
+    body #coming h4 {
+      font-family: "ProximaNova Thin";
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 1.5em; }
+  body footer {
+    margin-top: 8em;
+    text-align: center; }
+    body footer p {
+      font-family: "ProximaNova Reg";
+      text-transform: uppercase;
+      color: #787878;
+      letter-spacing: 0.15em;
+      margin: 0; }
+    body footer p:nth-child(2) {
+      font-size: 12.5px;
+      opacity: 0.8; }
+
+@media (max-width: 650px) {
+  body {
+    padding: 10% 15% 0px; } }
+
+@media (max-width: 375px) {
+  header h1 {
+    width: 100%; }
+  header nav {
+    float: left !important;
+    width: 100%;
+    text-align: center; }
+    header nav .custom-input {
+      top: 0 !important; }
+      header nav .custom-input .select-label {
+        padding-left: 0; }
+  #coming h4 {
+    font-size: 1.2em !important;
+    font-family: "ProximaNova Reg" !important; } }

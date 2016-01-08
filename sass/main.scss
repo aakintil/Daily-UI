@@ -17,6 +17,7 @@ $pn_tn: "ProximaNova Thin";
 
 // text
 $dflt_lsp: 2.5px; 
+$lt_sp: 0.15em;
 
 
 // box model
@@ -27,6 +28,7 @@ $dflt_mg_b: 1.78571%;
 // colors
 $blue: #4285f4; 
 $grey: #787878; 
+$darker_grey: #5c5c5c;
 
 body {
 
@@ -40,8 +42,9 @@ body {
         }   
 
         .showcase-caption {
-            font-family: $hv_m; 
-            letter-spacing: 1px; 
+            font-family: $pn_l; 
+            text-transform: uppercase;
+            letter-spacing: $lt_sp; 
         }
     }
 
@@ -50,7 +53,7 @@ body {
         position: relative;
         height: 100px;
         text-transform: uppercase;
-        letter-spacing: 0.15em; 
+        letter-spacing: $lt_sp; 
 
         h1 {
             color: $grey; 
@@ -76,9 +79,10 @@ body {
                 }
 
                 .drop {
-                    padding: 5px; 
-                    width: 20em;
+                    //                    padding: 5px; 
                     background-color: white;
+                    width: 150%;
+                    text-align: right;
 
                     a {
                         text-decoration: none;
@@ -111,6 +115,11 @@ body {
             margin-top: 5em; 
         }
 
+        .mgTnone {
+            margin-top: 0 !important; 
+        }
+
+
         .padR {
             padding-right: 5px; 
         }
@@ -137,15 +146,51 @@ body {
 
             h4 {
                 font-family: $pn_sb;
+                letter-spacing: $lt_sp/2;
+                color: $darker_grey;
             }
 
             p {
                 font-family: $pn_r;
                 text-transform: uppercase; 
-                letter-spacing: 0.15em;
+                letter-spacing: $lt_sp;
                 color: $grey;
                 margin: 0;
             }
+        }
+    }
+
+    // Coming Soon 
+    #coming {
+        background-color: $blue;
+        color: white;
+        text-align: center;
+        padding: 5%;
+
+        h4 {
+            font-family: $pn_tn;
+            text-transform: uppercase;
+            letter-spacing: $lt_sp;
+            font-size: 1.5em;
+        }
+    }
+
+    // Footer
+    footer {
+        margin-top: 8em;
+        text-align: center;
+
+        p {
+            font-family: $pn_r;
+            text-transform: uppercase;
+            color: $grey;
+            letter-spacing: $lt_sp;
+            margin: 0;
+        }
+
+        p:nth-child( 2 ) {
+            font-size: 12.5px;
+            opacity: 0.8;
         }
     }
 }
@@ -169,4 +214,41 @@ body {
     //    .comps:nth-child(even) {
     //        margin-left: $dflt_mg_b !important;
     //    }
+}
+
+@media ( max-width: 650px ) {
+    body {
+        padding: 10% 15% 0px;
+    }
+}
+
+@media ( max-width: 375px ) {
+
+    header {
+
+        h1 {
+            width: 100%;
+        }
+
+        nav {
+            float: left !important;
+            width: 100%;
+            text-align: center;
+
+            .custom-input {
+                top: 0 !important;
+
+                .select-label {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    #coming {
+        h4 {
+            font-size: 1.2em !important;
+            font-family: $pn_r !important;
+        }
+    }
 }
